@@ -21,7 +21,11 @@
         <div class="flex items-center justify-between relative">
           <div class="px-4">
             <a href="#hero">
-              <img src="dist/img/logo-white.png" alt="bg-hero" class="h-12" />
+              <img
+                src="dist/img/logo-white.png"
+                alt="bg-hero"
+                class="h-12 hover:animate-spin"
+              />
             </a>
           </div>
           <div class="flex items-center px-4">
@@ -49,28 +53,28 @@
                 <li class="group">
                   <a
                     href="#hero"
-                    class="text-base text-white py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-white py-2 mx-8 flex group-hover:text-highlight"
                     >Home</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="text-base text-white py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-white py-2 mx-8 flex group-hover:text-highlight"
                     >About Me</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#portfolio"
-                    class="text-base text-white py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-white py-2 mx-8 flex group-hover:text-highlight"
                     >Portfolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="text-base text-white py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-white py-2 mx-8 flex group-hover:text-highlight"
                     >Contact Me</a
                   >
                 </li>
@@ -78,7 +82,7 @@
                   <a
                     href="https://github.com/krisnadwinugraha"
                     target="_blank"
-                    class="text-base text-white py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-white py-2 mx-8 flex group-hover:text-highlight"
                   >
                     <svg
                       class="fill-current"
@@ -121,10 +125,22 @@
               <span
                 class="block font-bold text-white text-3xl mt-1 mb-2 lg:text-4xl"
               >
-                <span class="hover:text-5xl hover:text-highlight"> KRISNA</span>
-                <span class="hover:text-5xl hover:text-highlight"> DWI </span
-                ><span class="hover:text-5xl hover:text-highlight"
-                  >NUGRAHA</span
+                <span
+                  style="display: inline-block"
+                  class="hover:text-highlight hover:animate-bounce"
+                >
+                  KRISNA</span
+                >
+                <span
+                  style="display: inline-block"
+                  class="hover:text-highlight hover:animate-bounce"
+                >
+                  DWI&nbsp</span
+                ><span
+                  style="display: inline-block"
+                  class="hover:text-highlight hover:animate-bounce"
+                >
+                  NUGRAHA</span
                 ></span
               >
             </h1>
@@ -156,14 +172,22 @@
       class="pt-36 pb-32 min-h-screen max-h-screen h-full bg-cover bg-center bg-no-repeat"
       style="background-image: url(dist/img/background1.png)"
     >
-      <div class="container">
+      <div class="container mb-32">
         <div class="w-full px-4">
           <div class="mx-auto max-w-prose text-center mb-16">
             <span
               class="block font-bold text-white text-3xl mt-1 mb-2 lg:text-5xl"
             >
-              <span class="hover:text-6xl hover:text-highlight">About</span
-              ><span class="hover:text-6xl hover:text-highlight"> Me</span>
+              <span
+                style="display: inline-block"
+                class="hover:text-highlight hover:animate-bounce"
+                >About&nbsp;</span
+              ><span
+                style="display: inline-block"
+                class="hover:text-highlight hover:animate-bounce"
+              >
+                Me</span
+              >
             </span>
             <p class="font-medium text-md text-secondary md:text-lg"></p>
 
@@ -173,18 +197,16 @@
               anyone. <br />
               Here are technologies I`ve working recently:
             </p>
-            <div
-              class="w-full px-4 flex flex-wrap justify-center mt-8 xl:mx-auto"
-            >
-              <div class="mb-12 p-4 md:w-1/4 lg:w-1/4 ">
-                <div class="rounded-md shadow-md overflow-hidden group" >
+            <div class="w-full px-4 flex flex-wrap justify-center xl:mx-auto">
+              <div class="mb-12 p-4 md:w-1/4 lg:w-1/4">
+                <div class="rounded-md shadow-md overflow-hidden group">
                   <a
                     href="https://laravel.com/"
                     target="_blank"
                     class="text-base text-white flex"
                   >
                     <svg
-                      class="fill-current group-hover:text-highlight "
+                      class="fill-current group-hover:text-highlight group-hover:animate-bounce mt-8"
                       width="100"
                       role="img"
                       viewBox="0 0 24 24"
@@ -196,7 +218,11 @@
                       />
                     </svg>
                   </a>
-                  <h3 class="font-semibold text-xl text-white mt-5 group-hover:text-highlight">Laravel</h3>
+                  <h3
+                    class="font-semibold text-xl text-white mt-5 group-hover:text-highlight group-hover:animate-bounce"
+                  >
+                    Laravel
+                  </h3>
                 </div>
               </div>
               <div class="mb-12 p-4 md:w-1/4 lg:w-1/4">
@@ -208,7 +234,7 @@
                   >
                     <svg
                       role="img"
-                      class="fill-current group-hover:text-highlight"
+                      class="fill-current group-hover:text-highlight group-hover:animate-bounce mt-8"
                       width="100"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
@@ -219,7 +245,11 @@
                       />
                     </svg>
                   </a>
-                  <h3 class="font-semibold text-xl text-white mt-5 group-hover:text-highlight">Vue</h3>
+                  <h3
+                    class="font-semibold text-xl text-white mt-5 group-hover:text-highlight group-hover:animate-bounce"
+                  >
+                    Vue
+                  </h3>
                 </div>
               </div>
               <div class="mb-12 p-4 md:w-1/4 lg:w-1/4">
@@ -231,7 +261,7 @@
                   >
                     <svg
                       width="100"
-                      class="fill-current group-hover:text-highlight"
+                      class="fill-current group-hover:text-highlight group-hover:animate-bounce mt-8"
                       role="img"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
@@ -242,7 +272,9 @@
                       />
                     </svg>
                   </a>
-                  <h3 class="font-semibold text-xl text-white mt-5 group-hover:text-highlight">
+                  <h3
+                    class="font-semibold text-xl text-white mt-5 group-hover:text-highlight group-hover:animate-bounce"
+                  >
                     Javascript
                   </h3>
                 </div>
@@ -256,7 +288,7 @@
                   >
                     <svg
                       width="100"
-                      class="fill-current group-hover:text-highlight"
+                      class="fill-current group-hover:text-highlight group-hover:animate-bounce mt-8"
                       role="img"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +299,9 @@
                       />
                     </svg>
                   </a>
-                  <h3 class="font-semibold text-xl text-white mt-5 group-hover:text-highlight">
+                  <h3
+                    class="font-semibold text-xl text-white mt-5 group-hover:text-highlight group-hover:animate-bounce"
+                  >
                     Bootstrap
                   </h3>
                 </div>
@@ -282,16 +316,20 @@
     <!-- Portfolio Section Start -->
     <section
       id="portfolio"
-      class="pt-36 pb-16 min-h-screen  h-full bg-cover bg-center bg-no-repeat"
+      class="pt-36 pb-16 min-h-screen h-full bg-cover bg-left bg-no-repeat"
       style="background-image: url(dist/img/background1.png)"
     >
-      <div class="container">
+      <div class="container mb-32">
         <div class="w-full px-4">
           <div class="mx-auto max-w-prose text-center mb-16">
             <span
               class="block font-bold text-white text-3xl mt-1 mb-2 lg:text-5xl"
             >
-              <span class="hover:text-6xl hover:text-highlight">Portfolio</span>
+              <span
+                style="display: inline-block"
+                class="hover:text-highlight hover:animate-bounce"
+                >Portfolio</span
+              >
             </span>
           </div>
         </div>
@@ -300,15 +338,34 @@
           class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
         >
           <div class="mb-12 p-4 md:w-1/2">
-            <h2 class="font-semibold text-3xl text-white mt-5">Admin Panel</h1>
-            <h3 class="font-semibold text-xl text-secondary mt-5">Reusable admin panel made based on Materio. Built with Vue and Laravel.</h3>
-            <p class="font-medium text-base text-secondary">
-              
-            </p>
+            <span
+              class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
+            >
+              <span
+                style="display: inline-block"
+                class="hover:text-highlight hover:animate-bounce"
+                >Admin&nbsp;</span
+              ><span
+                style="display: inline-block"
+                class="hover:text-highlight hover:animate-bounce"
+              >
+                Panel</span
+              >
+            </span>
+            <h3 class="font-semibold text-xl text-secondary mt-5">
+              Reusable admin panel made based on Materio. Built with Vue and
+              Laravel.
+            </h3>
+            <p class="font-medium text-base text-secondary"></p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
-              <img src="dist/img/materio.png" alt="technical" width="w-full" />
+              <img
+                class="w-full"
+                src="dist/img/materio.png"
+                alt="technical"
+                width="w-full"
+              />
             </div>
           </div>
         </div>
@@ -319,24 +376,40 @@
     <!-- Contact Section Start -->
     <section
       id="contact"
-      class="pt-36 pb-32 min-h-screen  h-full bg-cover bg-center bg-no-repeat"
+      class="pt-36 pb-32 min-h-screen h-full bg-cover bg-center bg-no-repeat"
       style="background-image: url(dist/img/background1.png)"
     >
-      <div class="container">
+      <div class="container mb-32">
         <div class="w-full px-4">
           <div class="mx-auto text-center mb-16">
             <span
               class="block font-bold text-white text-3xl mt-1 mb-2 lg:text-5xl"
             >
-              <span class="hover:text-6xl hover:text-highlight">Get</span
-              ><span class="hover:text-6xl hover:text-highlight"> In</span>
-              <span class="hover:text-6xl hover:text-highlight"> Touch</span>
+              <span
+                style="display: inline-block"
+                class="hover:text-highlight hover:animate-bounce"
+                >Get&nbsp</span
+              ><span
+                style="display: inline-block"
+                class="hover:text-highlight hover:animate-bounce"
+              >
+                In</span
+              >
+              <span
+                style="display: inline-block"
+                class="hover:text-highlight hover:animate-bounce"
+              >
+                Touch</span
+              >
             </span>
-           
           </div>
         </div>
 
-        <form action="mailto:krisnadwinugrahaabe@gmail.com" method="get" enctype="text/plain">
+        <form
+          action="mailto:krisnadwinugrahaabe@gmail.com"
+          method="get"
+          enctype="text/plain"
+        >
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <div class="w-full px-4 mb-8">
               <label for="name" class="text-base text-white font-bold mb-2"
@@ -348,6 +421,7 @@
                 name="subject"
                 placeholder="Type Your Name Here"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                required
               />
             </div>
             <div class="w-full px-4 mb-8">
@@ -357,9 +431,10 @@
               <input
                 type="email"
                 id="email"
-                name="email" 
+                name="email"
                 placeholder="Type Your Email Here"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                required
               />
             </div>
             <div class="w-full px-4 mb-8">
@@ -372,11 +447,13 @@
                 name="body"
                 placeholder="Type Your Message Here"
                 class="w-full h-32 bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                required
               ></textarea>
             </div>
             <div class="w-full px-4">
               <button
-              type="submit" value="Send"
+                type="submit"
+                value="Send"
                 class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
               >
                 Send
@@ -387,8 +464,6 @@
       </div>
     </section>
     <!-- Contact Section End -->
-
-     
 
     <script src="dist/js/script.js"></script>
   </body>
