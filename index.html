@@ -327,7 +327,7 @@
             >
               <span
                 style="display: inline-block"
-                class="hover:text-highlight hover:animate-bounce"
+                class="mb-16 hover:text-highlight hover:animate-bounce"
                 >Portfolio</span
               >
             </span>
@@ -335,39 +335,368 @@
         </div>
 
         <div
-          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+          id="controls-carousel"
+          class="relative w-full"
+          data-carousel="static"
         >
-          <div class="mb-12 p-4 md:w-1/2">
-            <span
-              class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
-            >
-              <span
-                style="display: inline-block"
-                class="hover:text-highlight hover:animate-bounce"
-                >Admin&nbsp;</span
-              ><span
-                style="display: inline-block"
-                class="hover:text-highlight hover:animate-bounce"
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden ease-in-out" data-carousel-item="active">
+              <div
+                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
               >
-                Panel</span
+                <div class="mb-12 p-4 md:w-1/2">
+                  <span
+                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
+                  >
+                    <span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                      >Admin&nbsp;</span
+                    ><span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                    >
+                      Panel</span
+                    >
+                  </span>
+                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
+                    Reusable admin panel made based on Materio. Built with Vue
+                    and Laravel.
+                  </h3>
+                  <a
+                    href="/gaming"
+                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                  >
+                    Visit Website</a
+                  >
+                  <p class="font-medium text-base text-secondary"></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                  <div class="rounded-md shadow-md overflow-hidden">
+                    <img
+                      class="w-full"
+                      src="dist/img/portfolio/adminpanel.png"
+                      alt="technical"
+                      width="w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden ease-in-out" data-carousel-item>
+              <div
+                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
               >
-            </span>
-            <h3 class="font-semibold text-xl text-secondary mt-5">
-              Reusable admin panel made based on Materio. Built with Vue and
-              Laravel.
-            </h3>
-            <p class="font-medium text-base text-secondary"></p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img
-                class="w-full"
-                src="dist/img/materio.png"
-                alt="technical"
-                width="w-full"
-              />
+                <div class="mb-12 p-4 md:w-1/2">
+                  <span
+                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
+                  >
+                    <span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                      >Game&nbsp;</span
+                    ><span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                    >
+                      Website</span
+                    >
+                  </span>
+                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
+                    Game Website Template Made With Bootstrap and CSS.
+                  </h3>
+                  <a
+                    href="/gaming/"
+                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                  >
+                    Visit Website</a
+                  >
+                  <p class="font-medium text-base text-secondary"></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                  <div class="rounded-md shadow-md overflow-hidden">
+                    <img
+                      class="w-full"
+                      src="dist/img/portfolio/game.png"
+                      alt="technical"
+                      width="w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden ease-in-out" data-carousel-item>
+              <div
+                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+              >
+                <div class="mb-12 p-4 md:w-1/2">
+                  <span
+                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
+                  >
+                    <span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                      >Market&nbsp;</span
+                    ><span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                    >
+                      Website</span
+                    >
+                  </span>
+                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
+                    Marketing Website Template Made With Bootstrap and CSS.
+                  </h3>
+                  <a
+                    href="/marketing/"
+                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                  >
+                    Visit Website</a
+                  >
+                  <p class="font-medium text-base text-secondary"></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                  <div class="rounded-md shadow-md overflow-hidden">
+                    <img
+                      class="w-full"
+                      src="dist/img/portfolio/market.png"
+                      alt="technical"
+                      width="w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden ease-in-out" data-carousel-item>
+              <div
+                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+              >
+                <div class="mb-12 p-4 md:w-1/2">
+                  <span
+                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
+                  >
+                    <span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                      >Travel&nbsp;</span
+                    ><span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                    >
+                      Website</span
+                    >
+                  </span>
+                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
+                    Traveling Website Template Made With Bootstrap and CSS.
+                  </h3>
+                  <a
+                    href="/travel/"
+                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                  >
+                    Visit Website</a
+                  >
+                  <p class="font-medium text-base text-secondary"></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                  <div class="rounded-md shadow-md overflow-hidden">
+                    <img
+                      class="w-full"
+                      src="dist/img/portfolio/trabelo.png"
+                      alt="technical"
+                      width="w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden ease-in-out" data-carousel-item>
+              <div
+                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+              >
+                <div class="mb-12 p-4 md:w-1/2">
+                  <span
+                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
+                  >
+                    <span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                      >Tech&nbsp;</span
+                    ><span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                    >
+                      Website</span
+                    >
+                  </span>
+                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
+                    Technology Website Template Made With Bootstrap and CSS.
+                  </h3>
+                  <a
+                    href="/tech/"
+                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                  >
+                    Visit Website</a
+                  >
+                  <p class="font-medium text-base text-secondary"></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                  <div class="rounded-md shadow-md overflow-hidden">
+                    <img
+                      class="w-full"
+                      src="dist/img/portfolio/tech.png"
+                      alt="technical"
+                      width="w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="hidden ease-in-out" data-carousel-item>
+              <div
+                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+              >
+                <div class="mb-12 p-4 md:w-1/2">
+                  <span
+                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
+                  >
+                    <span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                      >Politic&nbsp;</span
+                    ><span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                    >
+                      Website</span
+                    >
+                  </span>
+                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
+                    Politic Website Template Made With Bootstrap and CSS.
+                  </h3>
+                  <a
+                    href="/politico/"
+                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                  >
+                    Visit Website</a
+                  >
+                  <p class="font-medium text-base text-secondary"></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                  <div class="rounded-md shadow-md overflow-hidden">
+                    <img
+                      class="w-full"
+                      src="dist/img/portfolio/politico.png"
+                      alt="technical"
+                      width="w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 7 -->
+            <div class="hidden ease-in-out" data-carousel-item>
+              <div
+                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+              >
+                <div class="mb-12 p-4 md:w-1/2">
+                  <span
+                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
+                  >
+                    <span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                      >Hospital&nbsp;</span
+                    ><span
+                      style="display: inline-block"
+                      class="hover:text-highlight hover:animate-bounce"
+                    >
+                      Website</span
+                    >
+                  </span>
+                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
+                    Hospital Website Template Made With Bootstrap and CSS.
+                  </h3>
+                  <a
+                    href="/hospital/"
+                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                  >
+                    Visit Website</a
+                  >
+                  <p class="font-medium text-base text-secondary"></p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                  <div class="rounded-md shadow-md overflow-hidden">
+                    <img
+                      class="w-full"
+                      src="dist/img/portfolio/hospital.png"
+                      alt="technical"
+                      width="w-full"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6 text-white dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6 text-white dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
         </div>
       </div>
     </section>
@@ -473,6 +802,7 @@
     </section>
     <!-- Contact Section End -->
 
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="dist/js/script.js"></script>
   </body>
 </html>

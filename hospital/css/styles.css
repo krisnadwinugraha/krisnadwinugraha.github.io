@@ -1,0 +1,247 @@
+section {
+  position: relative;
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: transparent;
+  font-weight: bolder;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/medicine.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-content {
+  position: relative;
+  margin-top: 15%;
+  padding: 2em;
+  margin-left: 5%;
+}
+
+.hero-content h1 {
+  color: #000000;
+  font-family: arial;
+  font-size: 44px;
+  font-weight: bolder;
+  line-height: 44px;
+}
+
+.hero-content p {
+  color: #555555;
+  font-family: arial;
+  font-size: 18px;
+  max-width: 50ch;
+}
+
+.hero h2 {
+  color: #000000;
+  font-family: arial;
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 35px;
+}
+
+.benefit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/cardiac.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.benefit {
+  margin-top: 5%;
+  top: 0;
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+}
+
+.benefit-content {
+  margin: 0;
+  position: relative;
+  top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.benefit-content .container-fluid {
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 1em;
+}
+
+.benefit-content img {
+  border: 2px;
+  border-style: solid;
+  border-radius: 2em;
+}
+
+.benefit-content h2 {
+  color: #000000;
+  font-family: arial;
+  font-size: 36px;
+  font-weight: bolder;
+  line-height: 44px;
+}
+
+.benefit-content h4 {
+  color: #000000;
+  font-family: arial;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.feature {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  top: 0;
+  position: relative;
+  background-color: #ffffff;
+  width: 90%;
+  height: 100vh;
+}
+
+.feature-content {
+  margin: 0;
+  position: relative;
+  top: 50%;
+}
+
+.feature-content h2 {
+  color: #000000;
+  font-family: arial;
+  font-size: 36px;
+  font-weight: bolder;
+  line-height: 44px;
+}
+
+.feature-content p {
+  color: #555555;
+  font-family: arial;
+  font-size: 18px;
+  max-width: 50ch;
+}
+
+.doctor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/digitization.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(70%);
+}
+
+.doctor {
+  background-color: rgb(233, 233, 233);
+  margin-top: 20%;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.doctor-content {
+  position: relative;
+  padding: 8em;
+}
+
+.doctor-content .card-img-top {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  background-color: #000000;
+}
+
+.footer-content {
+  position: relative;
+  margin: 5%;
+}
+
+.footer-content h2 {
+  color: #ffffff;
+  font-family: arial;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 44px;
+}
+
+.footer-content h4 {
+  color: #ffffff;
+  font-family: arial;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 29px;
+}
+
+.footer-content p {
+  color: #e6e3e3;
+  font-family: arial;
+  font-size: 18px;
+  line-height: 18px;
+  max-width: 55ch;
+}
+
+.footer-content a {
+  color: #e6e3e3;
+  font-family: arial;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+text {
+  font-size: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .hero-content {
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-height: 310px) {
+  .hero-content {
+    display: none;
+  }
+}
