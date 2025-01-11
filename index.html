@@ -5,100 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="dist/output.css" rel="stylesheet" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="dist/img/logo-black.png"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="dist/img/logo-black.png" />
     <title>Krisna Dwi Nugraha</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!--Header Start-->
-    <header
-      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
-    >
-      <div class="container">
-        <div class="flex items-center justify-between relative">
+    <header class="bg-transparent fixed top-0 left-0 w-full flex items-center z-10">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between relative py-4">
           <div class="px-4">
             <a href="#hero">
-              <img
-                src="dist/img/logo-white.png"
-                alt="bg-hero"
-                class="h-12 hover:animate-spin"
-              />
+              <img src="dist/img/logo-white.png" alt="bg-hero" class="h-8 md:h-12 hover:animate-spin" />
             </a>
           </div>
           <div class="flex items-center px-4">
-            <button
-              id="hamburger"
-              name="hamburger"
-              type="button"
-              class="block absolute right-4 lg:hidden"
-            >
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
-              ></span>
+            <button id="hamburger" name="hamburger" type="button" class="block lg:hidden">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
             </button>
-            <nav
-              id="nav-menu"
-              class="hidden absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
-            >
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a
-                    href="#hero"
-                    class="text-base text-white py-2 mx-8 flex group-hover:text-highlight"
-                    >Home</a
-                  >
+                  <a href="#hero" class="text-base text-dark lg:text-white py-2 mx-8 flex group-hover:text-highlight">Home</a>
                 </li>
                 <li class="group">
-                  <a
-                    href="#about"
-                    class="text-base text-white py-2 mx-8 flex group-hover:text-highlight"
-                    >About Me</a
-                  >
+                  <a href="#about" class="text-base text-dark lg:text-white py-2 mx-8 flex group-hover:text-highlight">About Me</a>
                 </li>
                 <li class="group">
-                  <a
-                    href="#portfolio"
-                    class="text-base text-white py-2 mx-8 flex group-hover:text-highlight"
-                    >Portfolio</a
-                  >
+                  <a href="#portfolio" class="text-base text-dark lg:text-white py-2 mx-8 flex group-hover:text-highlight">Portfolio</a>
                 </li>
                 <li class="group">
-                  <a
-                    href="#contact"
-                    class="text-base text-white py-2 mx-8 flex group-hover:text-highlight"
-                    >Contact Me</a
-                  >
+                  <a href="#contact" class="text-base text-dark lg:text-white py-2 mx-8 flex group-hover:text-highlight">Contact Me</a>
                 </li>
                 <li class="group">
-                  <a
-                    href="https://github.com/krisnadwinugraha"
-                    target="_blank"
-                    class="text-base text-white py-2 mx-8 flex group-hover:text-highlight"
-                  >
-                    <svg
-                      class="fill-current"
-                      width="20"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                  <a href="https://github.com/krisnadwinugraha" target="_blank" class="text-base text-dark lg:text-white py-2 mx-8 flex group-hover:text-highlight">
+                    <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <title>GitHub</title>
-                      <path
-                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                      />
+                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                     </svg>
                   </a>
                 </li>
@@ -110,93 +55,91 @@
     </header>
     <!--Header End-->
     <!-- Hero Section-->
-    <section
-      id="hero"
-      class="pt-52 min-h-screen max-h-screen h-full bg-cover bg-no-repeat lg:pt-36 lg:bg-left"
-      style="
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.1),
-            rgba(0, 0, 0, 0.1)
-          ),
-          url(dist/img/hero.png);
-      "
-    >
-      <div class="container lg:pl-16">
-        <div class="flex">
-          <div
-            class="w-full self-center mx-auto max-w-prose px-4 sm:text-center lg:w-1/2"
-          >
-            <h1
-              class="text-base font-semibold text-primary mb-2 md:text-xl lg:text-left"
-            >
-              Hi, my name is
-              <span
-                class="block font-bold text-white text-3xl mt-1 mb-2 lg:text-4xl lg:text-left"
-              >
-                <span
-                  style="display: inline-block"
-                  class="hover:text-highlight hover:animate-bounce"
-                >
-                  KRISNA</span
-                >
-                <span
-                  style="display: inline-block"
-                  class="hover:text-highlight hover:animate-bounce"
-                >
-                  DWI&nbsp</span
-                ><span
-                  style="display: inline-block"
-                  class="hover:text-highlight hover:animate-bounce"
-                >
-                  NUGRAHA</span
-                ></span
-              >
-            </h1>
-            <p
-              class="font-medium text-secondary mb-7 leading-relaxed md:text-xl lg:text-left"
-            >
-              I'm a Full Stack Developer
-            </p>
+  <section id="hero" class="relative min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div class="absolute inset-0 bg-[url('dist/img/hero.png')] bg-cover bg-center opacity-20"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-4xl mx-auto text-center lg:text-left">
+        <div class="space-y-6">
+          <!-- Greeting -->
+          <h2 class="text-primary text-lg md:text-xl font-medium tracking-wide">
+            Hi, my name is
+          </h2>
+          
+          <!-- Name -->
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white space-y-2">
+            <span class="block">
+              <span class="inline-block hover:text-highlight transition-colors duration-300">KRISNA</span>
+              <span class="inline-block hover:text-highlight transition-colors duration-300 ml-3">DWI</span>
+              <span class="inline-block hover:text-highlight transition-colors duration-300 ml-3">NUGRAHA</span>
+            </span>
+          </h1>
 
-            <div class="lg:text-left">
-              <a
-                href="#contact"
-                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-              >
-                Contact Me</a
-              >
-            </div>
+          <!-- Role -->
+          <p class="text-xl md:text-2xl lg:text-3xl text-gray-300 font-light">
+            I'm a <span class="text-highlight font-medium">Full Stack Developer</span> crafting digital experiences
+          </p>
+
+          <!-- Description -->
+          <p class="text-gray-400 max-w-2xl mx-auto lg:mx-0 text-lg">
+            Specializing in building exceptional digital experiences that combine elegant design with robust functionality.
+          </p>
+
+          <!-- CTA Button -->
+          <div class="pt-4">
+            <a href="#contact" 
+              class="inline-block text-lg font-medium text-white bg-primary px-8 py-4 rounded-full 
+                      hover:bg-blue-600 transform hover:-translate-y-1 transition-all duration-300
+                      shadow-lg hover:shadow-primary/50">
+              Get in touch
+            </a>
           </div>
 
-          <div
-            class="w-full self-end px-4 hidden lg:w-1/2 lg:block md:display: none sm:display: none"
-          >
-            <img src="dist/img/freelance.png" alt="bg-hero" class="mx-auto" />
+          <!-- Optional: Tech Stack Icons -->
+          <div class="flex justify-center lg:justify-start space-x-6 pt-8">
+            <svg class="w-8 h-8 text-gray-400 hover:text-highlight transition-colors duration-300" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Laravel</title>
+              <path d="M23.642 5.43a.364.364 0 01.014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 01-.188.326L9.93 23.949a.316.316 0 01-.066.027c-.008.002-.016.008-.024.01a.348.348 0 01-.192 0c-.011-.002-.02-.008-.03-.012-.02-.008-.042-.014-.062-.025L.533 18.755a.376.376 0 01-.189-.326V2.974c0-.033.005-.066.014-.098.003-.012.01-.02.014-.032a.369.369 0 01.023-.058c.004-.013.015-.022.023-.033l.033-.045c.012-.01.025-.018.037-.027.014-.012.027-.024.041-.034H.53L5.043.05a.375.375 0 01.375 0L9.93 2.647h.002c.015.01.027.021.04.033l.038.027c.013.014.02.03.033.045.008.011.02.021.025.033.01.02.017.038.024.058.003.011.01.021.013.032.01.031.014.064.014.098v9.652l3.76-2.164V5.527c0-.033.004-.066.013-.098.003-.01.01-.02.013-.032a.487.487 0 01.024-.059c.007-.012.018-.02.025-.033.012-.015.021-.03.033-.043.012-.012.025-.02.037-.028.014-.01.026-.023.041-.032h.001l4.513-2.598a.375.375 0 01.375 0l4.513 2.598c.016.01.027.021.042.031.012.01.025.018.036.028.013.014.022.03.034.044.008.012.019.021.024.033.011.02.018.04.024.06.006.01.012.021.015.032zm-.74 5.032V6.179l-1.578.908-2.182 1.256v4.283zm-4.51 7.75v-4.287l-2.147 1.225-6.126 3.498v4.325zM1.093 3.624v14.588l8.273 4.761v-4.325l-4.322-2.445-.002-.003H5.04c-.014-.01-.025-.021-.04-.031-.011-.01-.024-.018-.035-.027l-.001-.002c-.013-.012-.021-.025-.031-.04-.01-.011-.021-.022-.028-.036h-.002c-.008-.014-.013-.031-.02-.047-.006-.016-.014-.027-.018-.043a.49.49 0 01-.008-.057c-.002-.014-.006-.027-.006-.041V5.789l-2.18-1.257zM5.23.81L1.47 2.974l3.76 2.164 3.758-2.164zm1.956 13.505l2.182-1.256V3.624l-1.58.91-2.182 1.255v9.435zm11.581-10.95l-3.76 2.163 3.76 2.163 3.759-2.164zm-.376 4.978L16.21 7.087 14.63 6.18v4.283l2.182 1.256 1.58.908zm-8.65 9.654l5.514-3.148 2.756-1.572-3.757-2.163-4.323 2.489-3.941 2.27z"/>
+            </svg>
+            <svg class="w-8 h-8 text-gray-400 hover:text-highlight transition-colors duration-300" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <title>Vue.js</title>
+              <path d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z"/>
+            </svg>
+            <svg class="w-8 h-8 text-gray-400 hover:text-highlight transition-colors duration-300" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <title>JavaScript</title>
+              <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+            </svg>
+            <svg class="w-8 h-8 text-gray-400 hover:text-highlight transition-colors duration-300" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <title>Bootstrap</title>
+              <path d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268zm-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876z"/>
+            </svg>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Optional: Add a subtle pattern overlay -->
+    <div class="absolute inset-0 bg-grid-slate-900/[0.04] bg-[size:20px_20px] z-0"></div>
+  </section>
     <!-- End Hero Section-->
 
     <!-- About Section-->
     <section
       id="about"
-      class="pt-36 pb-32 min-h-screen max-h-screen h-full bg-cover bg-center bg-no-repeat"
-      style="background-image: url(dist/img/background1.png)"
-    >
-      <div class="container mb-32">
-        <div class="w-full px-4">
+      class="pt-36 pb-32 min-h-screen h-full bg-cover bg-center bg-no-repeat"
+      style="background-image: url(dist/img/background1.png);"
+      >
+      <div class="container mx-auto px-4">
+        <div class="w-full">
           <div class="mx-auto max-w-prose text-center mb-16">
             <span
               class="block font-bold text-white text-3xl mt-1 mb-2 lg:text-5xl"
             >
               <span
-                style="display: inline-block"
-                class="hover:text-highlight hover:animate-bounce"
+                class="inline-block hover:text-highlight hover:animate-bounce"
                 >About&nbsp;</span
               ><span
-                style="display: inline-block"
-                class="hover:text-highlight hover:animate-bounce"
+                class="inline-block hover:text-highlight hover:animate-bounce"
               >
                 Me</span
               >
@@ -204,11 +147,12 @@
             <p class="font-medium text-md text-secondary md:text-lg"></p>
 
             <p class="font-medium text-md mt-5 text-secondary md:text-lg">
-              Hi! I'am Krisna, a Web Developer. I`ve been working as developer
-              for a few years now. I like to make website that easy to use by
+              Hi! I'am Krisna, a Web Developer. I’ve been working as a developer
+              for a few years now. I like to make websites that are easy to use by
               anyone. <br />
-              Here are technologies I`ve working recently:
+              Here are technologies I’ve worked with recently:
             </p>
+
             <div class="w-full px-4 flex flex-wrap justify-center xl:mx-auto">
               <div class="mb-12 p-4 md:w-1/4 lg:w-1/4">
                 <div class="rounded-md shadow-md overflow-hidden group">
@@ -326,490 +270,393 @@
     <!-- End About Section-->
 
     <!-- Portfolio Section Start -->
-    <section
-      id="portfolio"
-      class="pt-36 pb-16 min-h-screen h-full bg-cover bg-left bg-no-repeat"
-      style="background-image: url(dist/img/background1.png)"
-    >
-      <div class="container mb-32">
-        <div class="w-full px-4">
-          <div class="mx-auto max-w-prose text-center mb-16">
-            <span
-              class="block font-bold text-white text-3xl mt-1 mb-2 lg:text-5xl"
-            >
-              <span
-                style="display: inline-block"
-                class="mb-16 hover:text-highlight hover:animate-bounce"
-                >Portfolio</span
+    <section id="portfolio" class="py-20 md:py-36 bg-cover bg-left bg-no-repeat" style="background-image: url(dist/img/background1.png)">
+      <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+            <span class="inline-block hover:text-highlight hover:animate-bounce">Portfolio</span>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Explore my recent projects and web development work
+          </p>
+        </div>
+    
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div class="group bg-gray-900/50 rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 border border-gray-800">
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src="dist/img/portfolio/adminpanel.png"
+                alt="Admin Panel"
+                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2 group-hover:text-highlight">
+                Admin Panel
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Reusable admin panel made based on Materio. Built with Vue and Laravel.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">Vue</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">Laravel</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">Materio</span>
+              </div>
+              <a 
+                href="/gaming"
+                class="inline-flex items-center text-white hover:text-highlight transition-all duration-300 group-hover:translate-x-2"
               >
-            </span>
+                View Project 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project Card 2 -->
+          <div class="group bg-gray-900/50 rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 border border-gray-800">
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src="dist/img/portfolio/game.png"
+                alt="Game Website"
+                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2 group-hover:text-highlight">
+                Game Website
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Game Website Template Made With Bootstrap and CSS.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">Bootstrap</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">CSS</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">JavaScript</span>
+              </div>
+              <a 
+                href="/gaming/"
+                class="inline-flex items-center text-white hover:text-highlight transition-all duration-300 group-hover:translate-x-2"
+              >
+                View Project 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project Card 3 - Market Website -->
+          <div class="group bg-gray-900/50 rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 border border-gray-800">
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src="dist/img/portfolio/market.png"
+                alt="Market Website"
+                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2 group-hover:text-highlight">
+                Market Website
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Marketing Website Template Made With Bootstrap and CSS.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">Bootstrap</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">CSS</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">JavaScript</span>
+              </div>
+              <a 
+                href="/marketing/"
+                class="inline-flex items-center text-white hover:text-highlight transition-all duration-300 group-hover:translate-x-2"
+              >
+                View Project 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project Card 4 - Travel Website -->
+          <div class="group bg-gray-900/50 rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 border border-gray-800">
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src="dist/img/portfolio/trabelo.png"
+                alt="Travel Website"
+                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2 group-hover:text-highlight">
+                Travel Website
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Traveling Website Template Made With Bootstrap and CSS.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">Bootstrap</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">CSS</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">JavaScript</span>
+              </div>
+              <a 
+                href="/travel/"
+                class="inline-flex items-center text-white hover:text-highlight transition-all duration-300 group-hover:translate-x-2"
+              >
+                View Project 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project Card 5 - Tech Website -->
+          <div class="group bg-gray-900/50 rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 border border-gray-800">
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src="dist/img/portfolio/tech.png"
+                alt="Tech Website"
+                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2 group-hover:text-highlight">
+                Tech Website
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Technology Website Template Made With Bootstrap and CSS.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">Bootstrap</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">CSS</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">JavaScript</span>
+              </div>
+              <a 
+                href="/tech/"
+                class="inline-flex items-center text-white hover:text-highlight transition-all duration-300 group-hover:translate-x-2"
+              >
+                View Project 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project Card 6 - Politic Website -->
+          <div class="group bg-gray-900/50 rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 border border-gray-800">
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src="dist/img/portfolio/politico.png"
+                alt="Politic Website"
+                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2 group-hover:text-highlight">
+                Politic Website
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Politic Website Template Made With Bootstrap and CSS.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">Bootstrap</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">CSS</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">JavaScript</span>
+              </div>
+              <a 
+                href="/politico/"
+                class="inline-flex items-center text-white hover:text-highlight transition-all duration-300 group-hover:translate-x-2"
+              >
+                View Project 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project Card 7 - Hospital Website -->
+          <div class="group bg-gray-900/50 rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 border border-gray-800">
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src="dist/img/portfolio/hospital.png"
+                alt="Hospital Website"
+                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2 group-hover:text-highlight">
+                Hospital Website
+              </h3>
+              <p class="text-gray-400 mb-4">
+                Hospital Website Template Made With Bootstrap and CSS.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">Bootstrap</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">CSS</span>
+                <span class="px-3 py-1 text-xs font-medium text-highlight bg-highlight/10 rounded-full">JavaScript</span>
+              </div>
+              <a 
+                href="/hospital/"
+                class="inline-flex items-center text-white hover:text-highlight transition-all duration-300 group-hover:translate-x-2"
+              >
+                View Project 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-
-        <div
-          id="controls-carousel"
-          class="relative w-full"
-          data-carousel="static"
+      <div class="text-center mt-12">
+        <a 
+          href="https://github.com/krisnadwinugraha" 
+          target="_blank"
+          class="inline-flex items-center gap-2 px-8 py-4 text-white bg-primary rounded-full hover:bg-blue-600 transition-all duration-300 transform hover:-translate-y-1"
         >
-          <!-- Carousel wrapper -->
-          <div class="relative h-56 overflow-hidden m-32 rounded-lg md:h-96">
-            <!-- Item 1 -->
-            <div class="hidden ease-in-out" data-carousel-item="active">
-              <div
-                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-              >
-                <div class="mb-12 p-4 md:w-1/2">
-                  <span
-                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
-                  >
-                    <span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                      >Admin&nbsp;</span
-                    ><span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                    >
-                      Panel</span
-                    >
-                  </span>
-                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
-                    Reusable admin panel made based on Materio. Built with Vue
-                    and Laravel.
-                  </h3>
-                  <a
-                    href="/gaming"
-                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-                  >
-                    Visit Website</a
-                  >
-                  <p class="font-medium text-base text-secondary"></p>
-                </div>
-                <div class="mb-12 p-4 self-center md:w-1/2">
-                  <div class="rounded-md shadow-md overflow-hidden">
-                    <img
-                      class="w-full"
-                      src="dist/img/portfolio/adminpanel.png"
-                      alt="technical"
-                      width="w-full"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden ease-in-out" data-carousel-item>
-              <div
-                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-              >
-                <div class="mb-12 p-4 md:w-1/2">
-                  <span
-                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
-                  >
-                    <span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                      >Game&nbsp;</span
-                    ><span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                    >
-                      Website</span
-                    >
-                  </span>
-                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
-                    Game Website Template Made With Bootstrap and CSS.
-                  </h3>
-                  <a
-                    href="/gaming/"
-                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-                  >
-                    Visit Website</a
-                  >
-                  <p class="font-medium text-base text-secondary"></p>
-                </div>
-                <div class="mb-12 p-4 self-center md:w-1/2">
-                  <div class="rounded-md shadow-md overflow-hidden">
-                    <img
-                      class="w-full"
-                      src="dist/img/portfolio/game.png"
-                      alt="technical"
-                      width="w-full"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden ease-in-out" data-carousel-item>
-              <div
-                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-              >
-                <div class="mb-12 p-4 md:w-1/2">
-                  <span
-                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
-                  >
-                    <span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                      >Market&nbsp;</span
-                    ><span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                    >
-                      Website</span
-                    >
-                  </span>
-                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
-                    Marketing Website Template Made With Bootstrap and CSS.
-                  </h3>
-                  <a
-                    href="/marketing/"
-                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-                  >
-                    Visit Website</a
-                  >
-                  <p class="font-medium text-base text-secondary"></p>
-                </div>
-                <div class="mb-12 p-4 self-center md:w-1/2">
-                  <div class="rounded-md shadow-md overflow-hidden">
-                    <img
-                      class="w-full"
-                      src="dist/img/portfolio/market.png"
-                      alt="technical"
-                      width="w-full"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item 4 -->
-            <div class="hidden ease-in-out" data-carousel-item>
-              <div
-                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-              >
-                <div class="mb-12 p-4 md:w-1/2">
-                  <span
-                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
-                  >
-                    <span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                      >Travel&nbsp;</span
-                    ><span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                    >
-                      Website</span
-                    >
-                  </span>
-                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
-                    Traveling Website Template Made With Bootstrap and CSS.
-                  </h3>
-                  <a
-                    href="/travel/"
-                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-                  >
-                    Visit Website</a
-                  >
-                  <p class="font-medium text-base text-secondary"></p>
-                </div>
-                <div class="mb-12 p-4 self-center md:w-1/2">
-                  <div class="rounded-md shadow-md overflow-hidden">
-                    <img
-                      class="w-full"
-                      src="dist/img/portfolio/trabelo.png"
-                      alt="technical"
-                      width="w-full"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item 5 -->
-            <div class="hidden ease-in-out" data-carousel-item>
-              <div
-                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-              >
-                <div class="mb-12 p-4 md:w-1/2">
-                  <span
-                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
-                  >
-                    <span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                      >Tech&nbsp;</span
-                    ><span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                    >
-                      Website</span
-                    >
-                  </span>
-                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
-                    Technology Website Template Made With Bootstrap and CSS.
-                  </h3>
-                  <a
-                    href="/tech/"
-                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-                  >
-                    Visit Website</a
-                  >
-                  <p class="font-medium text-base text-secondary"></p>
-                </div>
-                <div class="mb-12 p-4 self-center md:w-1/2">
-                  <div class="rounded-md shadow-md overflow-hidden">
-                    <img
-                      class="w-full"
-                      src="dist/img/portfolio/tech.png"
-                      alt="technical"
-                      width="w-full"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item 6 -->
-            <div class="hidden ease-in-out" data-carousel-item>
-              <div
-                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-              >
-                <div class="mb-12 p-4 md:w-1/2">
-                  <span
-                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
-                  >
-                    <span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                      >Politic&nbsp;</span
-                    ><span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                    >
-                      Website</span
-                    >
-                  </span>
-                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
-                    Politic Website Template Made With Bootstrap and CSS.
-                  </h3>
-                  <a
-                    href="/politico/"
-                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-                  >
-                    Visit Website</a
-                  >
-                  <p class="font-medium text-base text-secondary"></p>
-                </div>
-                <div class="mb-12 p-4 self-center md:w-1/2">
-                  <div class="rounded-md shadow-md overflow-hidden">
-                    <img
-                      class="w-full"
-                      src="dist/img/portfolio/politico.png"
-                      alt="technical"
-                      width="w-full"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item 7 -->
-            <div class="hidden ease-in-out" data-carousel-item>
-              <div
-                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-              >
-                <div class="mb-12 p-4 md:w-1/2">
-                  <span
-                    class="block font-bold text-white text-2xl mt-1 mb-2 lg:text-3xl"
-                  >
-                    <span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                      >Hospital&nbsp;</span
-                    ><span
-                      style="display: inline-block"
-                      class="hover:text-highlight hover:animate-bounce"
-                    >
-                      Website</span
-                    >
-                  </span>
-                  <h3 class="font-semibold text-xl text-secondary mt-5 mb-12">
-                    Hospital Website Template Made With Bootstrap and CSS.
-                  </h3>
-                  <a
-                    href="/hospital/"
-                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-                  >
-                    Visit Website</a
-                  >
-                  <p class="font-medium text-base text-secondary"></p>
-                </div>
-                <div class="mb-12 p-4 self-center md:w-1/2">
-                  <div class="rounded-md shadow-md overflow-hidden">
-                    <img
-                      class="w-full"
-                      src="dist/img/portfolio/hospital.png"
-                      alt="technical"
-                      width="w-full"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Slider controls -->
-          <button
-            type="button"
-            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev
-          >
-            <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-            >
-              <svg
-                aria-hidden="true"
-                class="w-6 h-6 text-white dark:text-gray-800"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 19l-7-7 7-7"
-                ></path>
-              </svg>
-              <span class="sr-only">Previous</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next
-          >
-            <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-            >
-              <svg
-                aria-hidden="true"
-                class="w-6 h-6 text-white dark:text-gray-800"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                ></path>
-              </svg>
-              <span class="sr-only">Next</span>
-            </span>
-          </button>
-        </div>
+          View All Projects
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
     <!-- Portfolio Section End -->
 
     <!-- Contact Section Start -->
-    <section
-      id="contact"
-      class="pt-36 pb-32 min-h-screen h-full bg-cover bg-center bg-no-repeat"
-      style="background-image: url(dist/img/background1.png)"
-    >
-      <div class="container mb-32">
-        <div class="w-full px-4">
-          <div class="mx-auto text-center mb-16">
-            <span
-              class="block font-bold text-white text-3xl mt-1 mb-2 lg:text-5xl"
-            >
-              <span
-                style="display: inline-block"
-                class="hover:text-highlight hover:animate-bounce"
-                >Get&nbsp</span
-              ><span
-                style="display: inline-block"
-                class="hover:text-highlight hover:animate-bounce"
-              >
-                In</span
-              >
-              <span
-                style="display: inline-block"
-                class="hover:text-highlight hover:animate-bounce"
-              >
-                Touch</span
-              >
-            </span>
-            <a
-              class="text-highlight"
-              href="mailto:krisnadwinugrahaabe@gmail.com"
-              >krisnadwinugrahaabe@gmail.com</a
-            >
+    <section id="contact" class="py-20 md:py-36 bg-cover bg-center bg-no-repeat relative" style="background-image: url(dist/img/background1.png)">
+      <!-- Overlay for better text contrast -->
+      <div class="absolute inset-0 bg-gray-900/50"></div>
+      
+      <div class="container mx-auto px-4 relative">
+        <div class="max-w-4xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+              <span class="inline-block hover:text-highlight hover:animate-bounce">Get</span>
+              <span class="inline-block hover:text-highlight hover:animate-bounce">In</span>
+              <span class="inline-block hover:text-highlight hover:animate-bounce">Touch</span>
+            </h2>
+            <p class="text-gray-300 mb-8">Let's discuss your project or just say hello!</p>
+            
+            <!-- Contact Info Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <!-- Email Card -->
+              <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-700 hover:border-highlight transition-colors duration-300">
+                <div class="text-highlight mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 class="text-white font-semibold mb-2">Email</h3>
+                <a href="mailto:krisnadwinugrahaabe@gmail.com" class="text-highlight hover:underline">
+                  krisnadwinugrahaabe@gmail.com
+                </a>
+              </div>
+              
+              <!-- Location Card -->
+              <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-700 hover:border-highlight transition-colors duration-300">
+                <div class="text-highlight mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <h3 class="text-white font-semibold mb-2">Location</h3>
+                <p class="text-gray-300">Available for remote work</p>
+              </div>
+              
+              <!-- Social Media Card -->
+              <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-700 hover:border-highlight transition-colors duration-300">
+                <!-- Icon Section -->
+                <div class="text-highlight mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <!-- Title Section -->
+                <h3 class="text-white font-semibold mb-2">Social Media</h3>
+                <!-- Links Section -->
+                <div class="flex justify-center space-x-4">
+                  <!-- GitHub -->
+                  <a href="https://github.com/krisnadwinugraha" class="text-gray-300 hover:text-highlight" target="_blank" rel="noopener noreferrer">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                  </a>
+                  <!-- LinkedIn -->
+                  <a href="https://www.linkedin.com/in/krisna-dwi-nugraha-314511272/" class="text-gray-300 hover:text-highlight" target="_blank" rel="noopener noreferrer">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                  </a>
+                  <!-- GitLab -->
+                  <a href="https://gitlab.com/krisnadwinugrahaabe" class="text-gray-300 hover:text-highlight" target="_blank" rel="noopener noreferrer">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 22.045c-.346 0-.696-.167-.88-.45l-2.708-4.337H2.945c-.657 0-1.244-.41-1.487-1.02-.243-.61-.122-1.31.31-1.79l9.055-9.79c.234-.253.563-.394.917-.394.354 0 .684.14.918.394l9.055 9.79c.432.48.553 1.18.31 1.79-.243.61-.83 1.02-1.487 1.02h-5.467l-2.708 4.337c-.184.283-.534.45-.88.45zm.083-2.998h3.394l3.066-4.909H17.27l-5.271-5.69-5.27 5.69h-1.272l3.066 4.91h3.394l-1.083 1.724-1.083-1.724z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              
+            </div>
           </div>
-        </div>
-
-        <form
-          action="mailto:krisnadwinugrahaabe@gmail.com"
-          method="get"
-          enctype="text/plain"
-        >
-          <div class="w-full lg:w-2/3 lg:mx-auto">
-            <div class="w-full px-4 mb-8">
-              <label for="name" class="text-base text-white font-bold mb-2"
-                >Name :</label
-              >
-              <input
-                type="text"
-                id="name"
-                name="subject"
-                autocomplete="off"
-                placeholder="Type Your Name Here"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
-                required
-              />
+          
+          <!-- Contact Form -->
+          <form action="mailto:krisnadwinugrahaabe@gmail.com" method="get" enctype="text/plain" class="bg-gray-900/50 p-8 rounded-xl border border-gray-700">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="name" class="block text-white font-semibold mb-2">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="subject"
+                  required
+                  class="w-full bg-gray-800 text-white px-4 py-3 rounded-lg border border-gray-700 focus:border-highlight focus:ring-2 focus:ring-highlight focus:ring-opacity-50 transition-colors duration-300"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-white font-semibold mb-2">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full bg-gray-800 text-white px-4 py-3 rounded-lg border border-gray-700 focus:border-highlight focus:ring-2 focus:ring-highlight focus:ring-opacity-50 transition-colors duration-300"
+                  placeholder="john@example.com"
+                />
+              </div>
             </div>
-            <div class="w-full px-4 mb-8">
-              <label for="name" class="text-base text-white font-bold mb-2"
-                >Email :</label
-              >
-              <input
-                type="email"
-                id="email"
-                name="email"
-                autocomplete="off"
-                placeholder="Type Your Email Here"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
-                required
-              />
-            </div>
-            <div class="w-full px-4 mb-8">
-              <label for="name" class="text-base text-white font-bold mb-2"
-                >Message :</label
-              >
+            
+            <div class="mb-6">
+              <label for="message" class="block text-white font-semibold mb-2">Message</label>
               <textarea
-                type="message"
                 id="message"
                 name="body"
-                autocomplete="off"
-                placeholder="Type Your Message Here"
-                class="w-full h-32 bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
                 required
+                rows="6"
+                class="w-full bg-gray-800 text-white px-4 py-3 rounded-lg border border-gray-700 focus:border-highlight focus:ring-2 focus:ring-highlight focus:ring-opacity-50 transition-colors duration-300 resize-none"
+                placeholder="Your message here..."
               ></textarea>
             </div>
-            <div class="w-full px-4">
-              <button
-                type="submit"
-                value="Send"
-                class="text-base font-semibold text-white bg-blue-700 py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
-              >
-                Send
-              </button>
-            </div>
-          </div>
-        </form>
+            
+            <button
+              type="submit"
+              class="w-full bg-highlight text-white font-semibold py-4 rounded-lg hover:bg-blue-600 transform hover:-translate-y-1 transition-all duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </section>
     <!-- Contact Section End -->

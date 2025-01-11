@@ -7,6 +7,21 @@ module.exports = {
       padding: "16px",
     },
     extend: {
+      animation: {
+        'gradient': 'gradient 15s ease infinite',
+      },
+      keyframes: {
+        gradient: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          },
+        },
+      },
       colors: {
         primary: "#1d4ed8",
         secondary: "#bac0c9",
@@ -14,7 +29,16 @@ module.exports = {
         highlight: "#fcf146",
       },
       screens: {
-        "2xl": "1320px",
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1320px',
+      },
+      spacing: {
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',
       },
     },
   },
